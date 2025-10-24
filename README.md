@@ -72,6 +72,6 @@ Se tudo ocorrer bem, o aplicativo estará acessível em: http://localhost:8080/(
 
 ### 3. Acessando as Páginas
 
-**Página de Cadastro:** http://localhost:8080/cadastro
-**Página de Login:** http://localhost:8080/login
-**Meu Acervo:** http://localhost:8080/acervo
+* **Página de Cadastro:** http://localhost:8080/cadastro
+* **Página de Login:** http://localhost:8080/login
+* **Meu Acervo:** http://localhost:8080/acervo
