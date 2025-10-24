@@ -1,6 +1,6 @@
-🎬 CineList - Catálogo de Filmes
+###🎬 CineList - Catálogo de Filmes
 
-✨ Visão Geral do Projeto
+## ✨ Visão Geral do Projeto
 
 O CineList é um sistema de gerenciamento de coleções de filmes, permitindo que o usuário cadastre, visualize e gerencie seus filmes favoritos com notas e detalhes.
 
@@ -8,11 +8,9 @@ Esta é a versão inicial (Frontend/Layout) do projeto, focada em entregar uma e
 
 ⚠️ Status Atual: Este repositório contém a estrutura inicial do Frontend (HTML, CSS, JavaScript). As funcionalidades de back-end (lógica de negócio em Java/Spring Boot e persistência de dados) serão adicionadas em updates futuros.
 
-🚀 Tecnologias e Dependências
+## 🚀 Tecnologias e Dependências
 
 O projeto utiliza o ecossistema Spring Boot, mas esta fase se concentra nas tecnologias de interface:
-
-## 🚀 Tecnologias e Dependências
 
 | Categoria | Tecnologia | Versão/Uso |
 | :--- | :--- | :--- |
