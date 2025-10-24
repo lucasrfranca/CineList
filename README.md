@@ -12,6 +12,18 @@ Esta é a versão inicial (Frontend/Layout) do projeto, focada em entregar uma e
 
 O projeto utiliza o ecossistema Spring Boot, mas esta fase se concentra nas tecnologias de interface:
 
+## 🚀 Tecnologias e Dependências
+
+| Categoria | Tecnologia | Versão/Uso |
+| :--- | :--- | :--- |
+| **Backend** | Java | JDK 17+ (Recomendado) |
+| **Framework** | Spring Boot | 3.x (Estrutura) |
+| **Template Engine**| Thymeleaf/JSP | Usado para renderizar as páginas HTML |
+| **Estilização** | CSS3 | Dark Mode, Flexbox (Layout dos Cards e Menu) |
+| **Ícones** | Font Awesome | 6.x (Estrelas, Botões de Ação) |
+| **Interatividade** | JavaScript | JS puro para Modal de Cadastro |
+| **Build Tool** | Maven ou Gradle | Gerenciamento de dependências |
+
 🏗️ Estrutura de Arquivos
 
 A arquitetura do projeto segue o padrão do Spring Boot para aplicações web, com todos os arquivos estáticos (CSS, JS, Imagens) localizados na pasta src/main/resources/static.
