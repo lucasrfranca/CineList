@@ -56,3 +56,10 @@ A arquitetura do projeto segue o padrão do Spring Boot para aplicações web, c
 1.  Ter um SGBD instalado na sua maquina. No meu caso estou utilando o **MySQL Workbench** e para ele poder efetuar a conexão com o banco de dados é preciso ter o driver MySQL instalado nas dependências do projeto. É possível fazer o download da versão mais recente no link: https://dev.mysql.com/downloads/connector/j/ com base no seu OS. Após isso, só adicionar o arquivo baixado na pasta Maven Dependencies.
 2.  Crie um banco com o nome cinelist_db.
 3.  No arquivo src/main/resources/application.properties, defina a porta do servidor e os detalhes de conexão do seu banco de dados local.
+```yaml
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.url=jdbc:mysql://localhost:3306/cinelist_db
+spring.datasource.username=seu_usuario
+spring.datasource.password=sua_senha
+server.port=8080
+```
