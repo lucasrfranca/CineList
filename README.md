@@ -7,3 +7,16 @@ O CineList é um sistema de gerenciamento de coleções de filmes, permitindo qu
 Esta é a versão inicial (Frontend/Layout) do projeto, focada em entregar uma experiência de usuário (UX) moderna e funcional, com tema escuro (Dark Mode).
 
 ⚠️ Status Atual: Este repositório contém a estrutura inicial do Frontend (HTML, CSS, JavaScript). As funcionalidades de back-end (lógica de negócio em Java/Spring Boot e persistência de dados) serão adicionadas em updates futuros.
+
+🚀 Tecnologias e Dependências
+
+O projeto utiliza o ecossistema Spring Boot, mas esta fase se concentra nas tecnologias de interface:
+
+Categoria,Tecnologia,Versão/Uso
+Backend,Java,JDK 17+ (Recomendado)
+Framework,Spring Boot,3.x (Estrutura)
+Template Engine,Thymeleaf/JSP,Usado para renderizar as páginas HTML
+Estilização,CSS3,"Dark Mode, Flexbox (Layout dos Cards e Menu)"
+Ícones,Font Awesome,"6.x (Estrelas, Botões de Ação)"
+Interatividade,JavaScript,JS puro para Modal de Cadastro
+Build Tool,Maven ou Gradle,Gerenciamento de dependências
