@@ -63,3 +63,8 @@ spring.datasource.username=seu_usuario
 spring.datasource.password=sua_senha
 server.port=8080
 ```
+### 2. Execução do Spring Boot
+
+```yaml
+./mvnw spring-boot:run
+```
