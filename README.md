@@ -24,13 +24,14 @@ O projeto utiliza o ecossistema Spring Boot, mas esta fase se concentra nas tecn
 
 A arquitetura do projeto segue o padrão do Spring Boot para aplicações web, com todos os arquivos estáticos (CSS, JS, Imagens) localizados na pasta src/main/resources/static.
 					
+```yaml
 /cinelist
 ├── src/main/java
 │   └── ... (Futuros Controladores e Serviços Java)
 ├── src/main/resources
 │   ├── static
 │   │   ├── css
-│   │   │   ├── style.css (Login/Cadastro)
+│   │   │   ├── style.css (Estilos gerais, Menu, Login/Cadastro)
 │   │   │   └── style_acervo.html (Estilos Específicos do Catálogo)
 │   │   ├── js
 │   │   │   └── acervo.js (Lógica do Modal)
@@ -40,6 +41,6 @@ A arquitetura do projeto segue o padrão do Spring Boot para aplicações web, c
 │       ├── login.html
 │       ├── cadastro.html
 │       └── acervo.html (Página Principal do Catálogo)
-├── pom.xml (ou build.gradle)				
+├── pom.xml			
 					
 					
