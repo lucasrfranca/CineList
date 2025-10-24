@@ -1,5 +1,7 @@
 🎬 CineList - Catálogo de Filmes
+
 ✨ Visão Geral do Projeto
+
 O CineList é um sistema de gerenciamento de coleções de filmes, permitindo que o usuário cadastre, visualize e gerencie seus filmes favoritos com notas e detalhes.
 
 Esta é a versão inicial (Frontend/Layout) do projeto, focada em entregar uma experiência de usuário (UX) moderna e funcional, com tema escuro (Dark Mode).
