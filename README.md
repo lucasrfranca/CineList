@@ -37,10 +37,8 @@ A arquitetura do projeto segue o padrão do Spring Boot para aplicações web, c
 │   │   │   └── acervo.js (Lógica do Modal)
 │   │   └── images
 │   │       └── logo.png
-│   └── templates
+│   ztemplates
 │       ├── login.html
 │       ├── cadastro.html
 │       └── acervo.html (Página Principal do Catálogo)
-├── pom.xml			
-					
-					
+└──pom.xml			
