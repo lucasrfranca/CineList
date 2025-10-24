@@ -41,4 +41,18 @@ A arquitetura do projeto segue o padrão do Spring Boot para aplicações web, c
 │       ├── login.html
 │       ├── cadastro.html
 │       └── acervo.html (Página Principal do Catálogo)
-└──pom.xml			
+└──pom.xml
+```
+
+## ⚙️ Como Rodar a Aplicação Localmente
+
+### Pré-requisitos
+
+1.  **JDK (Java Development Kit)**: Versão 17 ou superior.
+2.  **IDE:** IntelliJ IDEA, VS Code ou Eclipse (recomendado para projetos Spring Boot).
+
+### 1. Configuração do Banco de Dados
+
+1.  Ter um SGBD instalado na sua maquina. No meu caso eu estou utilando o **MySQL Workbench**
+2.  **Git:** Instalado e configurado.
+3.  **IDE:** IntelliJ IDEA, VS Code ou Eclipse (recomendado para projetos Spring Boot).
