@@ -68,7 +68,7 @@ server.port=8080
 ```yaml
 ./mvnw spring-boot:run
 ```
-Se tudo ocorrer bem, o aplicativo estará acessível em: http://localhost:8080/(ou na porta escolhida)
+Se tudo ocorrer bem, o aplicativo estará acessível em: http://localhost:8080/ (ou na porta escolhida)
 
 ### 3. Acessando as Páginas
 
