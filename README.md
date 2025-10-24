@@ -48,11 +48,11 @@ A arquitetura do projeto segue o padrão do Spring Boot para aplicações web, c
 
 ### Pré-requisitos
 
-1.  **JDK (Java Development Kit)**: Versão 17 ou superior.
+1.  **JDK (Java Development Kit)**: Versão 17 ou superior(utilizei o 25).
 2.  **IDE:** IntelliJ IDEA, VS Code ou Eclipse (recomendado para projetos Spring Boot).
 
 ### 1. Configuração do Banco de Dados
 
-1.  Ter um SGBD instalado na sua maquina. No meu caso eu estou utilando o **MySQL Workbench**
-2.  **Git:** Instalado e configurado.
-3.  **IDE:** IntelliJ IDEA, VS Code ou Eclipse (recomendado para projetos Spring Boot).
+1.  Ter um SGBD instalado na sua maquina. No meu caso estou utilando o **MySQL Workbench** e para ele poder efetuar a conexão com o banco de dados é preciso ter o driver MySQL instalado nas dependências do projeto. É possível fazer o download da versão mais recente no link: https://dev.mysql.com/downloads/connector/j/ com base no seu OS. Após isso, só adicionar o arquivo baixado na pasta Maven Dependencies.
+2.  Crie um banco com o nome cinelist_db.
+3.  No arquivo src/main/resources/application.properties, defina a porta do servidor e os detalhes de conexão do seu banco de dados local.
