@@ -12,11 +12,27 @@ Esta é a versão inicial (Frontend/Layout) do projeto, focada em entregar uma e
 
 O projeto utiliza o ecossistema Spring Boot, mas esta fase se concentra nas tecnologias de interface:
 
-Categoria,Tecnologia,Versão/Uso
-Backend,Java,JDK 17+ (Recomendado)
-Framework,Spring Boot,3.x (Estrutura)
-Template Engine,Thymeleaf/JSP,Usado para renderizar as páginas HTML
-Estilização,CSS3,"Dark Mode, Flexbox (Layout dos Cards e Menu)"
-Ícones,Font Awesome,"6.x (Estrelas, Botões de Ação)"
-Interatividade,JavaScript,JS puro para Modal de Cadastro
-Build Tool,Maven ou Gradle,Gerenciamento de dependências
+🏗️ Estrutura de Arquivos
+
+A arquitetura do projeto segue o padrão do Spring Boot para aplicações web, com todos os arquivos estáticos (CSS, JS, Imagens) localizados na pasta src/main/resources/static.
+					
+/cinelist
+├── src/main/java
+│   └── ... (Futuros Controladores e Serviços Java)
+├── src/main/resources
+│   ├── static
+│   │   ├── css
+│   │   │   ├── style.css (Login/Cadastro)
+│   │   │   └── style_acervo.html (Estilos Específicos do Catálogo)
+│   │   ├── js
+│   │   │   └── acervo.js (Lógica do Modal)
+│   │   └── images
+│   │       └── logo.png
+│   └── templates
+│       ├── login.html
+│       ├── cadastro.html
+│       └── acervo.html (Página Principal do Catálogo)
+├── pom.xml (ou build.gradle)
+└── README.md					
+					
+					
