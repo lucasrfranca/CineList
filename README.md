@@ -66,13 +66,9 @@ A arquitetura do projeto segue o padrão MVC do Spring Boot, com a adição do s
 
 Para iniciar a aplicação, você deve ter o banco de dados e as tabelas criadas:
 
-1.	**Localize o Script SQL:** O arquivo contendo os comandos `CREATE TABLE` está em:
-    * `src/main/resources/db_schema.sql`
+1.	**Localize o Script SQL:** O arquivo contendo os comandos `CREATE TABLE` está em: `src/main/resources/db_schema.sql`
 
-
-2.	2.  **Execute o Script:** Use o MySQL Workbench, o terminal ou sua ferramenta de banco de dados favorita para executar os comandos neste arquivo.
-    * O script criará o banco de dados `cinelist_db` e as tabelas `usuario` e `filme`.
-
+2.	**Execute o Script:** Use o MySQL Workbench, o terminal ou sua ferramenta de banco de dados favorita para executar os comandos neste arquivo. O script criará o banco de dados `cinelist_db` e as tabelas `usuario` e `filme`.
 
 3.  **Configuração da Conexão:** No arquivo `src/main/resources/application.properties`, defina as credenciais do seu banco de dados local.
    
