@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CineList - Login</title>
+	<link rel="icon" type="image/png" href="/images/icone.png">
     <link rel="stylesheet" href="/css/style.css"> 
 </head>
 <body>
@@ -21,8 +22,16 @@
     <div class="container">
         <div class="card">
             <h1>Login</h1>
+			
+			<div th:if="${sucesso}" style="color: #155724; background-color: #d4edda; border-color: #c3e6cb; padding: 10px; border-radius: 4px; margin-bottom: 15px;">
+				<p th:text="${sucesso}"></p>
+			</div>
+
+			<div th:if="${erroLogin}" style="color: #721c24; background-color: #f8d7da; border-color: #f5c6cb; padding: 10px; border-radius: 4px; margin-bottom: 15px;">
+			    <p th:text="${erroLogin}"></p>
+			</div>
             
-            <form action="/login-process" method="post" class="form-login">
+            <form action="/login" method="post" class="form-login">
                 
                 <div class="form-group">
                     <label for="email">E-mail:</label>
@@ -31,7 +40,7 @@
                 
                 <div class="form-group">
                     <label for="senha">Senha:</label>
-                    <input type="password" id="senha" name="senha" required>
+                    <input type="password" id="senha" name="senha" maxlength="8" minlength="5" required>
                 </div>
                 
                 <button type="submit" class="btn-login">Entrar</button>

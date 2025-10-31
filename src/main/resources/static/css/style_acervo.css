@@ -13,6 +13,7 @@ body {
     --cor-card: #1e1e1e; 
     --cor-texto-clara: #f4f7fa; 
     --cor-texto-secundaria: #b0b0b0; 
+	--cor-perigo: #dc3545;
 }
 
 .acervo-container {
@@ -146,8 +147,8 @@ body {
     display: block;
 }
 
-.btn-secundary.excluir {
-    color: #dc3545; 
+.btn-secundary.excluir-btn {
+    color: var(--cor-perigo); 
 }
 
 .modal {
@@ -290,4 +291,52 @@ body {
 .nav-link-primary:hover {
     background-color: var(--cor-primaria);
     color: #0d0d0d !important; 
+}`
+
+.acervo-vazio {
+	grid-column: 1 / -1; 
+    text-align: center;
+    padding: 40px 20px;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    color: #666;
+    font-size: 1.2em;
+}
+
+.acervo-vazio i {
+	display: block;
+    margin-top: 10px;
+    font-size: 2em;
+    color: #aaa;
+}
+
+.texto-laranja-destaque {
+    color: #ff6600;
+    font-weight: bold;
+    text-decoration: none; 
+    cursor: default; 
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px; 
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    color: var(--cor-texto-principal);
+}
+
+.alert-success {
+    background-color: #d4edda; 
+    border-color: #c3e6cb;
+    color: #155724; 
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
 }
