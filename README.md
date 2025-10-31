@@ -55,8 +55,11 @@ A arquitetura do projeto segue o padrão MVC do Spring Boot, com a adição do s
 ### Pré-requisitos
 
 1.  **JDK (Java Development Kit)**: Versão 17 ou superior(utilizei o 25).
+   
 2.  **IDE:** IntelliJ IDEA, VS Code ou Eclipse (recomendado para projetos Spring Boot).
+   
 3.  **SGBD (Sistema Gerenciador de Banco de Dados):** MySQL.
+   
 4.  **Driver MySQL:** É possível fazer o download da versão mais recente no link: https://dev.mysql.com/downloads/connector/j/. Após isso, só adicionar o arquivo baixado na pasta Maven Dependencies.
 
 ### 1. Configuração e Criação do Banco de Dados
