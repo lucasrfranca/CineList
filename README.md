@@ -22,26 +22,32 @@ O projeto é construído sobre o ecossistema Spring Boot, utilizando o padrão M
 
 ## 🏗️ Estrutura de Arquivos
 
-A arquitetura do projeto segue o padrão do Spring Boot para aplicações web, com todos os arquivos estáticos (CSS, JS, Imagens) localizados na pasta src/main/resources/static.
+A arquitetura do projeto segue o padrão MVC do Spring Boot, com a adição do script do banco de dados na pasta resources.
 					
 ```yaml
 /cinelist
 ├── src/main/java
-│   └── ... (Futuros Controladores e Serviços Java)
+│   └── com/cinelist
+│       ├── controller  # Lógica de Roteamento (CinelistController.java)
+│       ├── model       # Entidades JPA (Filme.java, Usuario.java)
+│       ├── repository  # Interfaces Spring Data JPA
+│       └── service     # Lógica de Negócio (FilmeService.java)
 ├── src/main/resources
+│   ├── db_schema.sql # Script SQL para a criação das tabelas.
 │   ├── static
 │   │   ├── css
-│   │   │   ├── style.css (Estilos gerais, Menu, Login/Cadastro)
-│   │   │   └── style_acervo.html (Estilos Específicos do Catálogo)
+│   │   │   ├── style.css
+│   │   │   └── style_acervo.css
 │   │   ├── js
-│   │   │   └── acervo.js (Lógica do Modal)
+│   │   │   └── acervo.js  # Lógica dos Modais e Interações
 │   │   └── images
-│   │       └── logo.png
-│   ztemplates
+│   │       ├── logo.png
+|	|		└── icone.png
+│   └── templates
 │       ├── login.html
 │       ├── cadastro.html
-│       └── acervo.html (Página Principal do Catálogo)
-└──pom.xml
+│       └── acervo.html
+└── pom.xml
 ```
 
 ## ⚙️ Como Rodar a Aplicação Localmente
@@ -50,13 +56,23 @@ A arquitetura do projeto segue o padrão do Spring Boot para aplicações web, c
 
 1.  **JDK (Java Development Kit)**: Versão 17 ou superior(utilizei o 25).
 2.  **IDE:** IntelliJ IDEA, VS Code ou Eclipse (recomendado para projetos Spring Boot).
+3.  **SGBD (Sistema Gerenciador de Banco de Dados):** MySQL.
+4.  **Driver MySQL:** É possível fazer o download da versão mais recente no link: https://dev.mysql.com/downloads/connector/j/. Após isso, só adicionar o arquivo baixado na pasta Maven Dependencies.
 
-### 1. Configuração do Banco de Dados
+### 1. Configuração e Criação do Banco de Dados
 
-1.  Ter um SGBD instalado na sua maquina. No meu caso estou utilando o **MySQL Workbench** e para ele poder efetuar a conexão com o banco de dados é preciso ter o driver MySQL instalado nas dependências do projeto. É possível fazer o download da versão mais recente no link: https://dev.mysql.com/downloads/connector/j/ com base no seu OS. Após isso, só adicionar o arquivo baixado na pasta Maven Dependencies.
-2.  Crie um banco com o nome cinelist_db.
-3.  No arquivo src/main/resources/application.properties, defina a porta do servidor e os detalhes de conexão do seu banco de dados local.
+Para iniciar a aplicação, você deve ter o banco de dados e as tabelas criadas:
+
+1.	**Localize o Script SQL:** O arquivo contendo os comandos `CREATE TABLE` está em:
+    * `src/main/resources/db_schema.sql`
+
+2.	2.  **Execute o Script:** Use o MySQL Workbench, o terminal ou sua ferramenta de banco de dados favorita para executar os comandos neste arquivo.
+    * O script criará o banco de dados `cinelist_db` e as tabelas `usuario` e `filme`.
+
+3.  **Configuração da Conexão:** No arquivo `src/main/resources/application.properties`, defina as credenciais do seu banco de dados local.
+   
 ```yaml
+# Caminho: src/main/resources/application.properties
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.datasource.url=jdbc:mysql://localhost:3306/cinelist_db
 spring.datasource.username=seu_usuario
