@@ -1,24 +1,24 @@
-## ✨ Visão Geral do Projeto
+## ✨ CineList: Gerenciador Pessoal de Filmes
 
-O **CineList** é um sistema de gerenciamento de coleções de filmes, permitindo que o usuário cadastre, visualize e gerencie seus filmes favoritos com notas e detalhes.
-
-Esta é a **versão inicial (Frontend/Layout)** do projeto, focada em entregar uma experiência de usuário (UX) moderna e funcional, com tema escuro (Dark Mode).
-
-**⚠️ Status Atual:** Este repositório contém a **estrutura inicial do Frontend (HTML, CSS, JavaScript)**. As funcionalidades de back-end (lógica de negócio em Java/Spring Boot e persistência de dados) serão adicionadas em *updates* futuros.
+O **CineList** é uma aplicação web completa desenvolvida com Spring Boot para gerenciamento de um acervo pessoal de filmes. Ele permite que o usuário crie uma conta e realize o **CRUD (Create, Read, Update e Delete)** de seus filmes, registrando notas, diretores e etc.
 
 ## 🚀 Tecnologias e Dependências
 
-O projeto utiliza o ecossistema Spring Boot, mas esta fase se concentra nas tecnologias de interface:
+O projeto é construído sobre o ecossistema Spring Boot, utilizando o padrão MVC (Model-View-Controller) e Persistência de Dados (JPA/Hibernate).
 
 | Categoria | Tecnologia | Versão/Uso |
 | :--- | :--- | :--- |
-| **Backend** | Java | JDK 17+ (Recomendado) |
-| **Framework** | Spring Boot | 3.x (Estrutura) |
-| **Template Engine**| Thymeleaf/JSP | Usado para renderizar as páginas HTML |
-| **Estilização** | CSS3 | Dark Mode, Flexbox (Layout dos Cards e Menu) |
-| **Ícones** | Font Awesome | 6.x (Estrelas, Botões de Ação) |
-| **Interatividade** | JavaScript | JS puro para Modal de Cadastro |
-| **Build Tool** | Maven ou Gradle | Gerenciamento de dependências |
+| **Backend** | Java | JDK 17+ (Desenvolvido com JDK 25) |
+| **Framework** | Spring Boot | 3.x (Estrutura e Configuração) |
+| **Persistência** | Spring Data JPA / Hibernate | Mapeamento Objeto-Relacional e persistência no MySQL. |
+| **Banco de Dados** | MySQL | Banco de dados relacional. |
+| **Template Engine**| Thymeleaf | Renderização dinâmica das páginas HTML. |
+| **Estilização** | CSS3 | Dark Mode, Layout Flexbox e Grid. |
+| **Ícones** | Font Awesome | 6.x (Ícones de ação, estrelas de avaliação). |
+| **Interatividade** | JavaScript | Lógica para gerenciar Modais de Cadastro/Edição e confirmação de Exclusão. |
+| **Build Tool** | Maven | Gerenciamento de dependências (`pom.xml`). |
+
+---
 
 ## 🏗️ Estrutura de Arquivos
 
